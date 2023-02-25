@@ -1,7 +1,9 @@
 
 import { printCount, printFinish } from './print.js';
-import "https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"
+import { Howl } from 'howler';
 import { switchOff, switchOn } from './switch.js';
+import Music from '../media/eralash.mp3';
+
 
 function getBackTime(allSeconds) {
     let hours = Math.floor(allSeconds / 3600);
@@ -32,10 +34,11 @@ export function counter(hours, minutes, seconds) {
         if (allSeconds === 0) {
             clearInterval(interval);
             let sound = new Howl({
-                src: ['../media/eralash.mp3']
+                src: [Music]
             });
             sound.play();
             printFinish('Время вышло!');
+            switchOff();
         }
 
     }, 1000);
