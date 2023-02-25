@@ -1,4 +1,4 @@
-import { DateTime } from "./luxon.js"; // 1
+import { DateTime } from "luxon";
 
 
 function diffDates(dateFrom, dateTo) {
