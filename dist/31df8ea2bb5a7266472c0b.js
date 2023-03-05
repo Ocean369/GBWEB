@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgallery=self.webpackChunkgallery||[]).push([[31],{31:(e,l,p)=>{e.exports=p.p+"media/video/2.mp4"}}]);

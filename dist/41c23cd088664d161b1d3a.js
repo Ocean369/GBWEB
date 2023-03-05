@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgallery=self.webpackChunkgallery||[]).push([[41],{41:(e,a,l)=>{e.exports=l.p+"media/audio/2.mp3"}}]);
